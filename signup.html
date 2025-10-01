@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AarogyaMitra signup</title>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+.main1{
+    width: 100%;
+height: 90vh;
+background-image: url(hero-bg.png);
+background-repeat: no-repeat;
+background-size:cover;
+/* background-attachment:fixed; */
+padding-top: 110px;
+}
+
+nav {
+    background-color: rgb(57, 57, 57);
+    display: flex;
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+}
+
+.hex{
+    width: 100px;
+}
+.img-logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.name-logo {
+    font-size: xx-large;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: rgb(114, 199, 177);
+    margin-left: -20px;
+}
+
+.main-a,
+.a1 {
+    color: rgb(80, 183, 155);
+    /* color: white; */
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 560;
+    text-decoration: none;
+    padding: 0px 20px;
+    display: flex;
+    align-self: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.ho {
+    color: white;
+}
+
+.main-a,
+a:hover {
+    color: white;
+}
+
+.get-s {
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(45, 141, 112);
+    border: none;
+    margin-left: 30px;
+
+
+}
+
+.get-started {
+    font-size: 14px;
+    color: white;
+    width: 100px;
+    padding-left: 20px;
+    text-decoration: none;
+    align-self: center;
+    margin-left: -18px;
+}
+
+.nav2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1500px;
+}
+
+.main-a2 {
+    display: none;
+    top: 240px;
+    border-radius: 10px;
+    position: relative;
+    padding-bottom: 40px;
+    background-color: rgb(57, 57, 57);
+justify-items: center;
+}
+
+.a2 {
+    margin: 40px;
+    display: none;
+     color: rgb(80, 183, 155);
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 560;
+    text-decoration: none;
+    display: flex;
+    align-self: center;
+width:max-content;
+position: relative;
+    transition: all 0.2s ease-in-out;
+}
+.aa{
+      margin: 40px;
+     color: rgb(80, 183, 155);
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 560;
+    text-decoration: none;
+    display: flex;
+    align-self: center;
+width:max-content;
+position: relative;
+    transition: all 0.2s ease-in-out;
+}
+.aa:hover{
+    color: white;
+}
+.h{
+    color: white;
+}
+.get-s2 {
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(45, 141, 112);
+    border: none;
+    justify-self: center;
+}
+
+.get-started2 {
+    font-size: 14px;
+    color: white;
+    width: 100px;
+    padding-left: 20px;
+    text-decoration: none;
+    align-self: center;
+    margin-left: -18px;
+}
+
+.menu {
+    display: none;
+    width: 40px;
+}
+
+.menu2 {
+    margin-right: 30px;
+width: 60px;
+    display: none;
+}
+
+.main-sec{
+    width: 800px;
+    height:570px;
+    background-color:white;
+    justify-self: center;
+margin-top: 50px;
+border-radius: 10px;
+}
+
+.login{
+    font-size: 30px;
+    font-family: sans-serif;
+        color: rgba(52, 50, 50, 0.954);
+font-weight: 600;
+padding: 20px 30px;
+
+}
+.logo1{
+    display: flex;
+align-items: center;
+width: 420px;
+
+}
+.letter{
+    margin-left: 30px;
+    position: absolute;
+    margin-top: 35px;
+    width: 30px;
+
+}
+.input-email{
+    border: none;
+    background-color: unset;
+    width: 400px;
+border-bottom: 2px solid rgb(196, 196, 196);
+margin: 40px 80px 0px;
+height: 50px;
+padding-left: 20px;
+font-size: 20px;
+color: rgb(60, 60, 60);
+/* padding-left: 10px; */
+
+}
+.logo-main{
+    display: flex;
+    flex-direction: row;
+}
+.are{
+    justify-self: center;
+    padding:60px 0px 20px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color:  rgb(99, 99, 99);
+    font-size: 20px;
+}
+.radio{
+    justify-self: center;
+}
+.r{
+    padding-right: 20px;
+    font-size: 20px;
+    padding-left: 5px;
+    color:  rgb(99, 99, 99);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ra{
+    width: 20px;
+    height: 20px;
+}
+
+.login-btns{
+ justify-self: center;
+}
+.login-btn{
+    background-color: rgb(53, 154, 124);
+    border: none;
+    width: 400px;
+    height: 50px;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+.login-btn2{
+    color: white;
+    justify-self: center;
+    font-size: 17px;
+}
+.si{
+    display: flex;
+    justify-self: center;
+    margin-top: 30px;
+    font-size: 16px;
+    font-family: sans-serif;
+        color: rgb(99, 99, 99);
+
+}
+.si2{
+    padding-left: 5px;
+    font-size: 16px;
+    color: rgb(55, 130, 110);
+    transition: none;
+}
+.si2:hover{
+    color: rgb(55, 130, 110);
+}
+
+footer {
+    width: 100%;
+    height: 430px;
+    background-color: rgb(31, 127, 98);
+    justify-items: center;
+}
+
+.sec-foot {
+    display: flex;
+    width: 1300px;
+    justify-content: space-evenly;
+    padding: 50px;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+.sec-ft1,
+.sec-ft2,
+.sec-ft3 {
+    padding: 20px 0px 0px;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 500;
+    color: whitesmoke;
+    transition: all 0.2s ease-in-out;
+
+}
+.sec-ft1:hover {
+    color: rgb(60, 202, 60);
+}
+
+.sec-ft2:hover {
+    color: rgb(60, 202, 60);
+}
+
+.sec-ft3:hover {
+    color: rgb(60, 202, 60);
+}
+
+.sec-ft22 {
+    width: 400px;
+    padding: 20px 0px 10px;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.sec-ft33 {
+    margin-left: -34px;
+    margin-top: 12px;
+}
+
+.sec-ft333 {
+    padding: 12px;
+    padding-left: 35px;
+    padding-bottom: 0;
+    font-size: 15px;
+}
+
+.aaa {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.aaa:hover {
+    color: rgb(60, 202, 60);
+}
+
+.last-foot {
+
+    color: whitesmoke;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
+
+}
+
+.last-foot2 {
+    color: whitesmoke;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+
+}
+
+b:hover {
+    color: rgb(60, 202, 60);
+}
+
+.social {
+    margin: 10px -12px;
+}
+
+.newsletter {
+    width: 250px;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 15px;
+    margin-top: 27px;
+    font-size: 17px;
+}
+
+.newsletter-btn {
+    width: 267px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    background-color: rgb(68, 207, 160);
+    font-size: 17px;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.newsletter-btn:hover {
+    background-color: transparent;
+    border: 2px solid rgb(103, 201, 146);
+    color: rgb(103, 201, 146);
+}
+
+.newsletter-btn-a {
+    color: white;
+    height: 40px;
+    width: 82%;
+    margin-left: -5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-btn-a:hover {
+    color: rgb(103, 201, 146);
+}
+
+@media only screen and (max-width:1225px) {
+    .a1 {
+        padding: 10px;
+    }
+
+    .get-s {
+        margin-left: 10px;
+    }
+}
+@media only screen and (min-width:1500px) {
+    .nav2 {
+        width: 1500px;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    .nav2 {
+        width: 100%;
+
+        a {
+            text-align: center;
+        }
+
+        .get-s {
+            align-self: center;
+            text-align: center;
+        }
+
+        .a1 {
+            display: none;
+        }
+
+        .get-s {
+            display: none;
+        }
+
+    }
+}
+
+@media only screen and (max-width:1100px) {
+
+    .main-a2 {
+        display: none;
+    }
+
+    .a2 {
+        display: block;
+    }
+
+    .get-s2 {
+        display: block;
+    }
+
+    .menu {
+        display: block;
+        right: 0;
+        padding-right: 30px;
+        align-self: center;
+        position: absolute;
+
+    }
+
+    .menu2 {
+        right: -10px;
+        position: absolute;
+    }
+}
+
+@media only screen and (min-width:1100px) {
+    .a2 {
+        display: none;
+    }
+
+    .menu {
+        position: absolute;
+        opacity: 0;
+        margin-left: -50px;
+    }
+
+    .menu2 {
+        position: absolute;
+        margin-left: -30px;
+        opacity: 0;        
+    }
+.main-a2{
+        opacity: 0;
+        position: absolute;
+        margin-left: -150px;
+}
+
+}
+
+@media only screen and (max-width:570px) {
+    .main-a2 {
+        padding: 0% 30% 10% 30%;
+        width: 40%;
+        top: 70px;
+        position: absolute;
+    }
+}
+@media only screen and (max-width:430px) {
+.name-logo{
+font-size: 28px;
+}
+.menu{
+    width: 30px;
+}
+.menu2{
+    width: 50px;
+}
+.hex{
+    width: 80px;
+}
+
+}
+
+@media only screen and (max-width:1400px) {
+.sec-foot{
+padding: 50px 0px 50px 0px;
+}
+}
+@media only screen and (max-width:1300px) {
+.sec-foot{
+    width: 1150px;
+}
+}
+@media only screen and (max-width:1150px) {
+footer{
+    height: 680px;
+}
+    .sec-foot{
+        width: 90%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    justify-self: center;
+}
+.sec-foot3 ,.sec-foot1{
+    margin-left: 100px;
+}
+}
+@media only screen and (max-width:710px) {
+footer{
+    height: 1130px;
+}
+    .sec-foot{
+    display: grid;
+    grid-template-columns: auto;
+    font-size: 22px;
+    justify-items: center;
+}
+.sec-ft1,
+.sec-ft2,
+.sec-ft3 {
+    font-size: 18px;
+}
+.sec-foot1{
+    margin: 0;
+}
+.sec-foot3{
+    margin-left: 50px;
+}
+.sec-foot2{
+    margin-left: 40px;
+}
+}
+@media only screen and (max-width:485px) {
+.sec-ft22{
+    width: 90%;
+}
+footer{
+    height: 1130px;
+}
+.last-foot{
+        text-align: center;
+    padding: 0px 20px 0px 20px;
+}
+}
+@media only screen and (max-width:435px) {
+footer{
+padding-bottom: 50px;
+    
+}
+}
+@media only screen and (max-width:360px) {
+footer{
+    padding-bottom: 100px;
+}
+}
+@media only screen and (max-width:900px) {
+.main-sec{
+    width: 650px;
+}
+.logo1{
+    width: 20px;
+}
+.logo1-2{
+    margin-left: 280px;
+}
+.logo-main{
+    margin-left:10px;
+}
+}
+@media only screen and (max-width:750px) {
+.main1{
+    height: 110vh;
+}
+    .main-sec{
+    width: 500px;
+    height: 750px;
+}
+.logo1{
+    width: 500px;
+}
+    .logo-main{
+    display: flex;
+    flex-direction: column;
+}
+.logo1-2{
+    margin-left: 0;
+}
+.r{
+    font-size: 17px;
+}
+.login-btn{
+    width: 300px;
+}
+}
+@media only screen and (max-width:570px) {
+.main-sec{
+    width: 370px;
+    height: 750px;
+}
+.logo1{
+    width: 400px;
+}
+    .logo-main{
+    display: flex;
+    flex-direction: column;
+}
+.logo1-2{
+    margin-left: 0;
+}
+.r{
+    font-size: 17px;
+}
+.login-btn{
+    width: 240px;
+}
+.login-btn2{
+    font-size: 15px;
+}
+.input-email{
+    height: 35px;
+    font-size: 17px;
+    margin-left: 70px;
+}
+.letter{
+    margin-left: 20px;
+    width: 25px;
+}
+.rad{
+   justify-self: center;
+    padding-bottom: 10px;
+}
+}
+@media only screen and (max-width:450px) {
+.main1{
+    height: 95vh;
+}
+    .main-sec{
+    width: 350px;
+    height: 680px;
+}
+.logo1{
+    width: 350px;
+    margin-left: 20px;
+}
+    .logo-main{
+    display: flex;
+    flex-direction: column;
+}
+.logo1-2{
+    margin-left: 20px;
+}
+.login-btn{
+    width: 140px;
+    height: 40px;
+}
+.login-btn2{
+    font-size: 15px;
+}
+.input-email{
+    height: 35px;
+    font-size: 17px;
+    margin-left: 40px;
+}
+.letter{
+    margin-left: 0px;
+}
+.are{
+    font-size: 15px;
+}
+.rad{
+    display: flex;
+    justify-self: center;
+    padding-bottom: 5px;
+}
+.r{
+    font-size: 14px;
+}
+.si,.si2{
+    font-size: 14px;
+}
+
+}
+@media only screen and (max-width:400px) {
+.main-sec{
+    width: 320px;
+    height: 680px;
+}
+.logo1{
+    width: 200px;
+}
+    .logo-main{
+    display: flex;
+    flex-direction: column;
+}
+.logo1-2{
+    margin-left: 20px;
+}
+.login-btn{
+    width: 140px;
+    height: 40px;
+}
+.login-btn2{
+    font-size: 15px;
+}
+.input-email{
+    height: 35px;
+    font-size: 17px;
+    margin-left: 40px;
+}
+.letter{
+    margin-left: 10px;
+}
+.are{
+    font-size: 15px;
+}
+.rad{
+    display: flex;
+    justify-self: center;
+    padding-bottom: 5px;
+}
+.r{
+    font-size: 14px;
+}
+.si,.si2{
+    font-size: 14px;
+}
+
+}
+@media only screen and (max-width:350px) {
+.main-sec{
+    width: 300px;
+    height: 680px;
+}
+.logo1{
+    width: 200px;
+    margin-left: 10px;
+}
+    .logo-main{
+    display: flex;
+    flex-direction: column;
+}
+.logo1-2{
+    margin-left: 10px;
+}
+.login-btn{
+    width: 140px;
+    height: 40px;
+}
+.login-btn2{
+    font-size: 15px;
+}
+.input-email{
+    height: 35px;
+    font-size: 17px;
+    margin-left: 40px;
+}
+.letter{
+    margin-left: 10px;
+}
+.are{
+    font-size: 15px;
+}
+.rad{
+    display: flex;
+    justify-self: center;
+    padding-bottom: 5px;
+}
+.r{
+    font-size: 14px;
+}
+.si,.si2{
+    font-size: 14px;
+}
+
+}
+</style>    
+</head>
+
+<body>
+    <main class="main1">
+        <nav>
+            <div class="nav2">
+                <div class="img-logo">
+                    <img class="hex" src="logo_hexagonal-removebg-preview.png">
+                    <div class="name-logo">
+                        AarogyaMitra
+                    </div>
+                </div>
+                <div class="main-a">
+                    <a class="
+                    a1" href="home.html">HOME</a>
+                    <a class="a1" href="features.html">FEATURES</a>
+                    <a class="a1" href="contact.html">CONTACT US</a>
+                    <a class="a1" href="about.html">ABOUT US</a>
+                    <a class="a1" href="book.html">BOOK APPOINTMENT</a>
+                    <button class="get-s a1"><a class="get-started" href="login.html">GET STARTED
+                        </a></button>
+                    </div>
+                        <img onclick=sidebar() class="menu" src="icons8-menu-50.png" alt="">
+                        <img onclick=hidebar() class="menu2" src="icons8-cross-50.png" alt="">
+                <div class="main-a2">
+                    <a class="aa" href="home.html">HOME</a>
+                    <a class="aa" href="features.html">FEATURES</a>
+                    <a class="aa" href="contact.html">CONTACT US</a>
+                    <a class="aa" href="about.html">ABOUT US</a>
+                    <a class="aa" href="book.html">BOOK APPOINTMENT</a>
+                    <button class="get-s2"><a class="get-started2" href="login.html">GET STARTED
+                        </a></button>
+                </div>
+            </div>
+        </nav>
+        <script>
+         function sidebar(){
+            const sagar = document.querySelector(".main-a2")
+sagar.style.display = 'block'
+            const suthar = document.querySelector(".menu")
+suthar.style.display = 'none'
+            const sar = document.querySelector(".menu2")
+sar.style.display = 'block'
+
+         }
+         function hidebar(){
+            const sa = document.querySelector(".menu2")
+            sa.style.display="none"
+            const saa = document.querySelector(".main-a2")
+            saa.style.display="none"
+            const saaa = document.querySelector(".menu")
+            saaa.style.display="block"
+            
+         }
+        </script>
+        <section class="main-sec">
+            <div class="login">
+                Signup
+            </div>
+            <div class="logo-main">
+                <div class="logo1">
+                    <img class="letter" src="icons8-contact-48.png"><input
+                        class="input-email" type="text" placeholder="Enter your name">
+                </div>
+
+                <div class="logo1 logo1-2">
+                    <img class="letter" src="icons8-letter-50 (1).png 15-50-05-495.png"><input class="input-email" type="text" placeholder="Enter your email">
+                </div>
+            </div>
+            <div class="logo-main">
+                <div class="logo1">
+                    <img class="letter" src="icons8-lock-32.png"><input
+                        class="input-email" type="text" placeholder="Create a password">
+                </div>
+
+                <div class="logo1 logo1-2">
+                    <img class="letter" src="icons8-lock-32.png"><input
+                        class="input-email" type="text" placeholder="Confirm a password">
+                </div>
+            </div>
+            <div class="are">
+                Are you signup for
+            </div>
+            <div class="radio">
+               
+                <div class="rad">
+                <input class="ra" type="radio" name="r" id="radio1">
+                <label class="r" for="radio1">Doctor</label>
+                <input class="ra" type="radio" name="r" id="radio2">
+                <label class="r" for="radio2">Patient</label>
+               </div> 
+                <input class="ra" type="radio" name="r" id="radio3">
+                <label class="r" for="radio3">Hospital or Organization</label>
+
+            </div>
+            <div class="login-btns">
+                <button class="login-btn"><a class="login-btn2" href="home.html">Signup Now</a></button>
+            </div>
+            <div class="si">
+                Already have an account?<a class="si2" href="login.html">Login Now</a>
+            </div>
+        </section>
+    </main>
+
+     <footer>
+        <section class="sec-foot">
+            <section class="sec-foot1">
+                Reach At
+                <div class="sec-ft1">
+                    <img src="icons8-location-50.png" width="18px">
+                    Location
+                </div>
+                <div class="sec-ft2">
+                    <img src="icons8-call-50.png" width="18px" style="rotate: 280deg;">
+
+                    Call
+                </div>
+                <div class="sec-ft3">
+                    <img src="icons8-letter-50.png" width="16px">
+
+                    demo
+                </div>
+                <div class="social">
+                    <img src="icons8-f-50.png" width="30px">
+                    <img src="icons8-twitter-bird-50.png" width="30px">
+                    <img src="icons8-in-24.png" width="30px"><img>
+                    <img src="icons8-instagram-48.png" width="30px">
+                </div>
+            </section>
+            <section class="sec-foot2">
+                About
+
+                <div class="sec-ft22">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam deleniti ipsa consectetur consectetur
+                    adipisicing elit. Nam deleniti ipsa consectetursit officia blanditiis odit rerum, voluptates vitae
+                    consequatur, animi neque laudantium.
+                </div>
+            </section>
+            <section class="sec-foot3">
+                Links
+                <div class="sec-ft33">
+                    <div class="sec-ft333"><a class="aaa" href="home.html">HOME</a></div>
+                    <div class="sec-ft333"><a class="aaa" href="features.html">FEATURES</a></div>
+                    <div class="sec-ft333"><a class="aaa" href="contact.html">CONTACT US</a></div>
+                    <div class="sec-ft333"><a class="aaa" href="about.html">ABOUT US</a></div>
+                    <div class="sec-ft333"><a class="aaa" href="book.html">BOOK APPOINTMENT</a></div>
+
+                </div>
+            </section>
+            <section class="sec-foot4">
+                Newsletter
+                <div class="sec-ft44">
+                    <input class="newsletter" type="text" placeholder="Enter Email" required>
+                </div>
+                <button class="newsletter-btn"><a class="newsletter-btn-a" href="home.html">Subscribe</a></button>
+            </section>
+        </section>
+        <p class="last-foot"> © 2025 All Rights Reserved By <b>AarogyaMitra.</b>
+        </p>
+        <p class="last-foot2">Develop by <b> SAGAR SUTHAR</b>
+        </p>
+    </footer> 
+</body>
+
+</html>
