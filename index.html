@@ -1,0 +1,2229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAGAR-WEB-TEMPLATE2</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+   :root {
+    --font-family: "Orbitron", sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+.main1 {
+    background-color: black;
+    width: 100%;
+    height: 82vh;
+    text-align: center;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+.main-icon {
+    width: 80px;
+    height: 80px;
+    align-content: center;
+    margin: 4px -15px;
+}
+
+.main-logo {
+    display: flex;
+    margin-left: -100px;
+
+}
+
+.main-text {
+    font-family: var(--font-family);
+    background: linear-gradient(100deg, rgb(255, 89, 0), rgb(0, 179, 255));
+    background-clip: text;
+    color: transparent;
+    font-weight: 900;
+    font-size: 23px;
+    letter-spacing: 1px;
+    animation: glow 2s ease-in-out infinite;
+    align-content: center;
+
+}
+
+@keyframes glow {
+
+    0%,
+    100% {
+        filter: brightness(2);
+        text-shadow: 0 0 30px rgba(255, 94, 0, 0.5);
+    }
+
+    50% {
+        filter: brightness(1.3);
+        text-shadow: 0 0 30px rgb(255, 94, 0);
+    }
+}
+
+.main-a {
+    display: flex;
+
+}
+
+.a {
+    align-content: center;
+    text-decoration: none;
+    font-family: var(--font-family);
+    color: rgb(161, 163, 164);
+    font-weight: 500;
+    padding: 5px 20px 7px 20px;
+    font-size: 15px;
+    /* border: 2px solid rgba(255, 60, 0, 0); */
+    margin: 25px 12px 25px 12px;
+    border: 1px solid rgba(255, 68, 0, 0);
+    box-shadow: inset 0px 0px 5px 2px rgba(255, 68, 0, 0);
+    position: relative;
+
+}
+
+
+.a22:hover {
+    border: 1.5px solid rgba(255, 68, 0, 0.848);
+    box-shadow: inset 0px 0px 5px 1px rgba(255, 68, 0, 0.771);
+    transition: 0.3s ease-in-out all;
+
+}
+
+.a11 {
+    padding-top: 10px;
+    border: 1.5px solid rgba(255, 68, 0, 0.848);
+    box-shadow: inset 0px 0px 5px 1px rgba(255, 68, 0, 0.771);
+
+}
+
+.li {
+    background: linear-gradient(100deg, orangered, rgb(12, 170, 223));
+    height: 2px;
+    width: 170%;
+    margin: 5px 0px -5px -18px;
+}
+
+.a22::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    background: linear-gradient(100deg, orangered, rgb(12, 170, 223));
+    left: 3px;
+    bottom: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.a22:hover::before {
+
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 95%;
+    background-color: aqua;
+    left: 3px;
+    bottom: 2px;
+
+}
+ 
+.bg-ani {
+    background: linear-gradient(90deg, rgba(255, 68, 0, 0.2), rgba(0, 204, 255, 0.2));
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    animation: bg-anii 15s ease-in-out infinite;
+    box-shadow: inset 0px 0px 200px 50px black;
+    overflow: hidden;
+
+}
+
+.cir-ani {
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    border-radius: 100%;
+    box-shadow: 0px 0px 4px 2px rgba(255, 68, 0, 0.2);
+    margin: 50px 150px;
+    animation: cir-anii 12s ease-in-out infinite;
+    position: fixed;
+}
+
+.sq-ani {
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    box-shadow: 0px 0px 4px 2px rgba(0, 183, 255, 0.134);
+    margin: 550px 300px;
+    animation: sq-anii 15s ease-in-out infinite;
+    position: fixed;
+    z-index: 1;
+
+}
+
+.tri-ani {
+    height: 200px;
+    width: 200px;
+    opacity: 0.036;
+    position: fixed;
+    margin: 500px 20vw;
+    animation: tri-anii 15s ease-in-out infinite;
+    z-index: 1;
+}
+
+@keyframes tri-anii {
+
+    0%,
+    100% {
+        transform: translateY(10) translateX(0px);
+        rotate: 0deg;
+    }
+
+    50% {
+        transform: translateY(20px) translateX(20px);
+        rotate: 250deg;
+    }
+
+}
+
+@keyframes sq-anii {
+
+    0%,
+    100% {
+        transform: translateY(30px);
+        rotate: 0deg;
+    }
+
+    50% {
+        transform: translateY(0px);
+        rotate: 180deg;
+    }
+}
+
+.main-head {
+    position: absolute;
+ height: 100%;
+ width: 100%;
+    display: flex;
+align-content: center;
+
+    text-shadow: 3px 0px rgb(0, 195, 255);
+    justify-content: center;
+    margin-top: 45vh;
+    background-color: transparent;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: whitesmoke;
+    animation-delay: 8s;
+    animation: m-h1 8s step-end infinite;
+}
+
+
+@keyframes m-h1 {
+
+    0%,
+    100% {
+
+        display: none;
+    }
+
+    50% {
+
+       display: flex;
+    }
+}
+
+@keyframes m-h11 {
+
+    0%,
+    100% {
+
+      display: none;
+    }
+
+    50% {
+
+       display: flex;
+    }
+}
+
+.main-head11 {
+    position: absolute;
+ text-shadow: -3px 0px rgb(236, 26, 26);
+    width: 100%;
+    height: 100%;
+    margin-top: 45vh;
+    justify-content: center;
+  display: flex;
+    font-size: 60px;
+    background-color: unset;
+    font-family:sans-serif;
+    font-weight: 900;
+    color: whitesmoke;
+    animation: m-h11 8s step-end infinite;
+    animation-delay: 4s;
+
+
+}
+
+.main-head2 {
+    position: absolute;
+    margin-top: 46vh;
+    padding-top: 100px;
+    background-color: unset;
+    width: 100%;
+    font-family: var(--font-family);
+    color: rgb(161, 163, 164);
+    ;
+    font-size: 18px;
+    font-weight:5;
+    animation-delay: 3s;
+    animation: m-h22 6s step-end infinite;
+}
+
+@keyframes m-h22 {
+
+    0%,
+    100% {
+
+        display: none;
+    }
+
+    50% {
+
+       display:block;
+    }
+}
+
+.main-head22 {
+    position: absolute;
+    margin-top: 46vh;
+    padding-top: 100px;
+    background-color: unset;
+    width: 100%;
+    font-family: var(--font-family);
+    color: rgb(161, 163, 164);
+
+    font-size: 18px;
+    font-weight: 50;
+    animation: m-h2 6s step-end infinite;
+    animation-delay: 3s;
+
+}
+
+@keyframes m-h2 {
+
+    0%,
+    100% {
+
+      display: none;
+    }
+
+    50% {
+
+      display: block;
+    }
+}
+
+ .main2 {
+    width: 100%;
+    height: 750px;
+    justify-items:center;
+    justify-content: space-around;
+    
+}
+
+.buttons {
+    width: 100%;
+    text-align: center;
+    height: 100px;
+}
+
+.button1 {
+    width: 200px;
+    height: 45px;
+    color: whitesmoke;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: var(--font-family);
+    background: linear-gradient(70deg, rgb(251, 76, 13), rgb(0, 183, 255));
+    position: relative;
+    gap: 20px;
+    border: none;
+    margin-right: 7px;
+    animation: btn 2s ease-in-out infinite;
+
+}
+.button1:hover{
+    background-color: aliceblue;
+    position: relative;
+
+
+}
+@keyframes btn {
+
+    0%,
+    100% {
+        box-shadow: 0px 0px 0px 0px rgba(149, 50, 14, 0.795);
+        width: 200px;
+        height: 45px;
+        font-size: 16px;
+
+    }
+
+    50% {
+        box-shadow: 0px 0px 40px 1px rgba(201, 62, 12, 0.795);
+        width: 205px;
+        height: 50px;
+        font-size: 17px;
+
+    }
+
+}
+
+.button2 {
+    width: 200px;
+    height: 45px;
+    color: rgba(247, 80, 19, 0.909);
+    border: 2px solid rgba(247, 80, 19, 0.909);
+    position: relative;
+    margin-left: 7px;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: var(--font-family);
+    background-color: transparent;
+   transition: all 0.3s ease-in-out;
+
+}
+
+
+.button2:hover{
+ color: rgba(235, 235, 235, 0.909);
+    border: 2px solid rgba(242, 241, 240, 0.909);
+}
+
+
+
+@keyframes cir-anii {
+
+    0%,
+    100% {
+        transform: translateY(0px) translateX(20px);
+
+    }
+
+    50% {
+        transform: translateY(80px)translateX(10px);
+    }
+}
+.EE,.SS{
+    padding-right: 30px;
+}
+.CC{
+     padding-right: 30px;
+    
+}
+@keyframes bg-anii {
+
+    0%,
+    100% {
+        rotate: 0deg;
+    }
+
+    50% {
+        rotate: 180deg;
+    }
+}
+
+.E,.E2,.T,.I,.D,.E3,.M{
+    animation:E 4s ease-in-out infinite;
+    font-size: 70px;
+   
+}
+@keyframes E{
+    0%,100%{
+ transform: translateY(5px); 
+rotate: -0.5deg;
+} 
+
+50%{
+transform: translateY(0px);
+rotate: 0.5;
+    }
+}
+.L,.C,.R,.CC,.R2,.A,.S{
+   animation:D 4s ease-in-out infinite;
+   font-size: 70px;
+}
+@keyframes D{
+    0%,100%{
+transform: translateY(0px);
+rotate: -0.5deg;
+}
+50%{
+transform: translateY(5px);
+rotate: 0.5deg;
+    }
+}
+.F,.T,.RR,.II,.N,.W{
+    animation:E 4s ease-in-out infinite;
+    font-size: 70px;
+   
+}
+@keyframes E{
+    0%,100%{
+transform: translateY(5px);
+rotate: -0.5deg;
+}
+50%{
+transform: translateY(0px);
+rotate: 0.5deg;
+    }
+}
+.U,.UU,.EE,.SS,.O{
+   animation:D 4s ease-in-out infinite;
+       font-size: 70px;
+
+}
+@keyframes D{
+    0%,100%{
+transform: translateY(0px);
+rotate: -0.5deg;
+}
+50%{
+transform: translateY(5px);
+rotate: 0.5deg;
+    }
+}
+
+.core{
+    text-transform: uppercase;
+    font-family: var(--font-family);
+    font-size: 45px;
+    position: relative;
+    font-weight: 900;
+    background:linear-gradient(100deg, rgb(255, 89, 0), rgb(0, 179, 255));
+   text-align: center;
+  background-clip:text;
+  color: transparent;
+   margin-top: 200px;
+
+}
+
+.main-sec{
+display: flex;
+width: 1300px;
+height: 520px;
+justify-content: space-between;
+align-items: center;
+position: relative;
+background-color:unset;
+
+
+}
+.sec1{
+   width: 300px;
+   height:400px;
+   background-color: rgba(41, 38, 38, 0.617);
+   border: 2px solid rgba(255, 68, 0, 0.148);
+ margin-left: 65px;
+ border-radius: 10px;
+ z-index:0;
+   
+}
+
+.sec2{
+    width:850px;
+    height:400px;
+   background-color: rgba(41, 38, 38, 0.617);
+   border: 2px solid rgba(255, 68, 0, 0.148);
+   filter: blur(100%);
+   margin-right: 50px;
+   border-radius: 10px;
+   z-index: 0;
+
+} 
+.options{
+    width: 100%;
+    height: 100%;
+    background: unset;
+    align-content: center;
+    margin-top: -6px;
+    margin-left:20px;
+    
+}
+.opt1{
+    align-content: center;
+    text-align: start;
+    justify-content: center;
+    width: 78%;
+    padding-left: 22px;
+    height: 15%;
+   background:linear-gradient(30deg, rgb(255, 89, 0, 0.2), rgb(0, 179, 255 , 0.2));
+    border: 2px solid rgba(255, 68, 0, 0.595);
+    box-shadow: 0px 0px 20px 0.1px rgba(255, 89, 0, 0.33);
+    margin-top: 12px;
+    border-radius: 10px;
+    font-size:20px;
+    color:rgb(235, 233, 233);
+    text-transform:capitalize;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+.optionss{
+     align-content: center;
+    text-align:start;
+    justify-content: center;
+    width: 78%;
+    height: 15%;
+   background:unset;
+    margin-top: 12px;
+    border-radius: 7px;
+    padding-left: 22px;
+    font-size:20px;
+    color:rgb(235, 233, 233);
+    text-transform:capitalize;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ transition: all 0.3s ease-in-out;
+ background:linear-gradient(30deg, rgba(255, 89, 0, 0), rgba(0, 179, 255, 0));
+ border: 2px solid rgba(255, 68, 0, 0);
+ box-shadow: 0px 0px 20px 0.1px rgba(255, 89, 0, 0);
+} 
+
+
+
+.optionss:hover{
+background:linear-gradient(30deg, rgb(255, 89, 0, 0.2), rgb(0, 179, 255 , 0.2));
+ border: 2px solid rgba(255, 68, 0, 0.595);
+ box-shadow: 0px 0px 20px 0.1px rgba(255, 89, 0, 0.33);
+ cursor: pointer;  
+}
+
+.Lightning{
+ text-transform: capitalize;
+    font-family: var(--font-family);
+    font-size: 35px;
+    position: relative;
+    font-weight: 900;
+    background:linear-gradient(100deg, rgb(243, 242, 242), rgb(247, 124, 9));
+   text-align: start;
+  background-clip:text;
+  color: transparent;
+ padding: 30px 50px 30px 50px; 
+
+}
+
+.Experience{
+    color: rgb(172, 172, 172);
+    background-color: unset;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+ padding:0px 50px 30px 50px; 
+    line-height: 35px;
+}
+.arrow{
+    color: rgb(172, 172, 172);
+    background-color: unset;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    padding-left: 50px;
+     padding-top: 0px; 
+}
+.arrow::before{
+    content: "▸";
+    color: rgba(221, 84, 34, 0.945);
+    font-size: x-large;
+    margin-right: 20px;
+} 
+.about{
+padding-top: 70px;
+text-align: center;
+}
+ .main3{
+    width: 100%;
+    height: 1100px;
+    justify-items: center;
+ }
+ .ani-sec{
+    width: 1250px;
+    height:500px;
+    margin-top: 70px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    background-color:unset;
+ }
+ .para{
+    width:1000px;
+    height: 100%;
+background-color:unset;
+}
+.pio{
+  font-size: 40px;
+  background:linear-gradient(90deg,orangered,rgba(0, 225, 255, 0.903));
+font-weight: 600;
+background-clip: text;
+color: transparent;
+font-family: var(--font-family);
+letter-spacing: 1px;
+position: relative;
+z-index: -1;
+}
+.fro{
+    letter-spacing: 1px;
+font-size: 40px;
+  background:linear-gradient(90deg,orangered,rgb(0, 166, 255));
+font-weight: 600;
+background-clip: text;
+color: transparent;
+font-family:var(--font-family);
+padding-bottom: 20px;
+
+}
+.para2{
+    background-color: unset;
+    color:rgb(197, 194, 194);
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 25px 0px;
+}
+.para3{
+    background-color: unset;
+    color:rgb(197, 194, 194);
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 25px 0px;
+    width: 100%;
+}
+.para4{
+    background-color: unset;
+    color:rgb(197, 194, 194);
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0px 0px;
+    width: 100%;
+}
+
+.star-ani1{
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+box-shadow: 0px 0px 30px 1px rgba(255, 68, 0, 0.5);
+}
+.star-ani2{
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    border: 3px solid rgba(255, 68, 0, 0.713);
+    box-shadow: 0px 0px 30px 1px rgba(255, 68, 0, 0.257);
+    border-radius: 12px;
+    justify-items: center;
+    align-content: center;
+    animation: star2 100004s ease-out infinite;
+}
+@keyframes star2{
+    0%,100%{
+        rotate: 1000000deg;
+    }
+    0%{
+        rotate: 0deg;
+    }
+}
+@keyframes star3{
+    0%,100%{
+        rotate:0deg ;
+    }
+    0%{
+        rotate:10000deg;
+    }
+}
+.star-ani3{
+    width: 250px;
+    height: 250px;
+    background-color: transparent;
+    border: 2px solid rgba(0, 183, 255, 0.84);
+    box-shadow: 0px 0px 30px 1px rgba(0, 200, 255, 0.388);
+    border-radius: 12px;
+    animation: star3 500s ease-out infinite;
+
+}
+.ani-square{
+    background-color:unset;
+    margin: 100px;
+    margin-left: 50px;
+}
+.star-ani11{
+    height: 220px;
+    width: 300px;
+    padding-top: 70px;
+}
+.star-ani22{
+    width: 250px;
+    height: 250px;
+    justify-self: center;
+    margin-top: -50px;
+    border: none;
+    background: linear-gradient(90deg,rgba(245, 132, 91, 0.196),rgba(37, 151, 244, 0.185));
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+.star-ani33{
+     width: 150px;
+    height: 150px;
+    justify-self: center;
+    border: none;
+    background: linear-gradient(90deg,rgba(245, 132, 91, 0.196),rgba(37, 151, 244, 0.185));
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  animation: star33 500s ease-out infinite;
+
+}
+@keyframes star33{
+    0%,100%{
+        rotate:0deg ;
+    }
+    0%{
+        rotate:10000deg;
+    }
+}
+.main4{
+    height: 1010px;
+}
+.details{
+    background-color: unset;
+    width: 100%;
+    height:900px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.de{
+    width:39%;
+    height: 800px;
+   background-color: rgba(49, 47, 47, 0.419);
+   border: 2px solid rgba(255, 68, 0, 0.27);
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   margin-left: 50px;
+
+}
+.de2{
+    width: 40%;
+    height: 600px;
+    background-color: unset;
+    
+    
+}
+.ex{
+    color: rgba(247, 80, 19, 0.909);
+    font-family: sans-serif;
+    background-color: unset;
+    font-weight: 550;
+padding: 30px 40px 10px;
+}
+.ex1{
+    width: 80%;
+    height: 50px;
+    margin-right:40px;
+    margin-left: 40px;
+     background-color: rgba(56, 52, 52, 0.137);
+    border: 2px solid rgba(255, 68, 0, 0.286);
+    border-radius: 5px;
+    align-self: center;
+    color: whitesmoke;
+    font-size: large;
+    padding: 0px 20px;
+    transition: all 0.3s ease-in-out;
+    outline: unset;
+}
+.ex1:hover{
+ box-shadow: 0px 0px 20px 0.1px rgba(255, 89, 0, 0.63);
+ border: 2px solid rgba(255, 68, 0, 0.542);}
+.ex2{
+
+     width: 80%;
+    height: 130px;
+    padding: 20px;
+}
+.exx{
+    padding-top: 40px;
+}
+.send-btn{
+    width: 83.8%;
+    height: 50px;
+    animation: none;
+align-self: center;
+border-radius: 5px;
+margin: 30px ;
+color: aliceblue;
+transform: translateY(5px);
+
+}
+.send-btn:hover{
+    transition: all 0.2s ease-in-out;
+transform: translateY(0px);
+    box-shadow: 0px 10px 30px rgba(250, 74, 10, 0.515);
+}
+.em,.phone,.loc{
+    display: flex;
+    flex-direction: row;
+    background-color: unset;
+}
+.exxx,.exxx1{
+    background-color: unset;
+}
+.em,.phone,.loc{
+    background-color: unset;
+}
+.em1{
+     display: flex;
+    flex-direction: column;
+}
+.e{
+background: none;
+padding:15px 0px;
+
+}
+.em::before{
+content: "📧";
+    background: linear-gradient(40deg, rgba(248, 81, 20, 0.834), rgba(0, 183, 255, 0.705));
+    font-size: xx-large;
+    padding: 8px 13px;
+    border-radius: 100%;
+    
+}
+.phone::before{
+content: "📱";
+    background: linear-gradient(40deg, rgba(248, 81, 20, 0.834), rgba(0, 183, 255, 0.705));
+    font-size: xx-large;
+    padding: 8px 13px;
+    border-radius: 100%;
+}
+.loc::before{
+content: "📍";
+    background: linear-gradient(40deg, rgba(248, 81, 20, 0.834), rgba(0, 183, 255, 0.705));
+    font-size: xx-large;
+    padding: 8px 13px;
+    border-radius: 100%;
+}
+.con{
+    padding: 0px 5px 20px 0px;
+}
+.exxx{
+    color: orangered;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: large;
+margin: 7px 20px 10px ;
+}
+.exxx1{
+    color:rgb(209, 211, 212);
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: large;
+    font-size:16px;
+    padding-top: 3px;
+
+}
+.ad{
+    width: 95%;
+    height: 300px;
+     background-color: rgba(56, 52, 52, 0.137);
+    border: 2px solid rgba(255, 68, 0, 0.286);
+    border-radius: 10px;
+    margin-top: 30px;
+    color:rgba(209, 211, 212, 0.517);
+    font-family:var(--font-family);
+text-align: center;
+align-content: center;
+position: relative;
+}
+.line-ani{
+    z-index: -1;
+    width: 30px;
+    height: 400px;
+    background: chocolate;
+    rotate: 135deg;
+    position:relative;
+   
+}
+footer{
+    width: 100%;
+    height: 140px;
+    background-color: black;
+    position: relative;
+
+   
+}
+.main-foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.hrr{
+   background-color:  rgba(247, 110, 60, 0.366);
+    position: relative;
+    width: 100%;
+    height: 2px;
+    border: none;
+}
+.fo{
+    color: rgba(251, 78, 15, 0.825);
+   padding: 40px 20px 20px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size:18px;
+transition: all 0.3s ease-in-out;
+}
+.fo:hover{
+    color: rgb(0, 213, 255);
+    text-shadow: 0px 0px 10px rgb(0, 170, 255);
+}
+.fo2{
+    color: rgb(155, 154, 154);
+    text-align: center;
+    font-size:15px;
+    font-family:sans-serif;
+    padding: 0px 20px 0px 20px;
+
+}
+.fo2::after{
+    content: "SAGAR SUTHAR";
+    color: rgba(251, 78, 15, 0.825) ;
+    font-size: 14px;
+}
+.fo2:hover::after{
+    transition: all 0.3s ease-in-out;
+color: rgb(0, 213, 255);
+    text-shadow: 0px 0px 10px rgb(0, 170, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:2000px) {
+    nav {
+        width: 130%;
+        margin-left: -230px;
+    }
+
+}
+
+@media only screen and (max-width:1500px) {
+    nav {
+        width: 130%;
+        margin-left: -200px;
+
+    }
+
+    .main-logo {
+        padding-left: 80px;
+        padding-right: -220px;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    nav {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .a {
+        margin: 25px -10px 25px 20px;
+        font-size: smaller;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .cir-ani {
+        margin-left: 100px;
+    }
+
+    .sq-ani {
+        margin-left: 100px;
+    }
+
+    .main-a{
+        display: none;
+       
+    }
+    nav{
+        justify-content: space-between;
+        width: 90%;
+        padding-left:75px;
+        
+
+    }
+}
+@media only screen and (min-width:769px) {
+.more-img{
+    display: none;
+
+}
+}
+@media only screen and (max-width:769px) {
+.more-img{
+align-content: center;
+padding-right: 90px;
+
+}
+}
+@media only screen and (max-width:769px) {
+
+    .E,.E2,.T,.I,.D,.E3,.M{
+font-size: 50px;
+margin-top: 20px;
+    }
+.EE,.SS{
+    padding-right: 20px;
+}
+.CC{
+     padding-right: 20px;
+    
+}
+    
+    .L,.C,.R,.CC,.R2,.A,.S{
+font-size: 50px;
+margin-top: 20px;
+
+    }
+    .F,.T,.RR,.II,.N,.W{
+font-size: 50px;
+margin-top: 20px;
+
+    }
+    .U,.UU,.EE,.SS,.O{
+font-size: 50px;
+margin-top: 20px;
+
+    }
+   .buttons{
+    display:grid;
+   justify-items: center;
+   row-gap: 20px;
+ 
+   }
+   .button1{
+margin-left: 13px;
+
+   }
+   .send-btn{
+    margin-left: 25px;
+    
+   }
+   .button11{
+margin-left: 10px;
+margin-top: 0;
+
+   }
+.main2{
+    height: 1180px;
+}
+.main4{
+    height: 1750px;
+}
+}
+@media only screen and (max-width:400px) {
+    .cir-ani {
+        margin-left: 20px;
+    }
+
+    .sq-ani {
+        margin-left: 100px;
+        margin-top: -410px;
+    }
+
+    .tri-ani {
+        margin-left: 150px;
+        margin-top: 200px;
+    }
+    .fo{
+        padding: 20px 10px 10px 10px;
+    }
+    
+}
+
+@media only screen and (max-width:450px) {
+.more-img{
+    padding-right: 20px;
+}
+.main-logo{
+    padding-left: 20px;
+}
+.more-img{
+    padding-right: 50px;
+}
+}
+@media only screen and (max-width:550px) {
+
+ .E,.E2,.T,.I,.D,.E3,.M{
+font-size: 40px;
+margin-top: 30px;
+
+    }
+    .L,.C,.R,.CC,.R2,.A,.S{
+font-size: 40px;
+margin-top: 30px;
+    }
+    .F,.T,.RR,.II,.N,.W{
+font-size:40px;
+margin-top: 30px;
+
+    }
+    .U,.UU,.EE,.SS,.O{
+font-size: 40px;
+margin-top: 30px;
+
+    }
+    .EE,.SS{
+    padding-right: 15px;
+}
+.CC{
+     padding-right: 15px;
+    
+}
+.main-head2{
+    font-size: 15px;
+}
+.main-head22{
+    font-size: 15px;
+
+}
+.core{
+    font-size: 35px;
+}
+}
+@media only screen and (max-width:450px) {
+
+ .E,.E2,.T,.I,.D,.E3,.M{
+font-size: 30px;
+margin-top: 50px;
+
+    }
+    .L,.C,.R,.CC,.R2,.A,.S{
+font-size: 30px;
+margin-top: 50px;
+
+    }
+    .F,.T,.RR,.II,.N,.W{
+font-size:30px;
+margin-top: 50px;
+
+    }
+    .U,.UU,.EE,.SS,.O{
+font-size: 30px;
+margin-top: 50px;
+
+
+    }
+    .EE,.SS{
+    padding-right: 10px;
+}
+.CC{
+     padding-right: 10px;
+    
+}
+.core{
+    font-size: 25px;
+}
+.main1{
+    margin-top: -10px;
+}
+.main-text{
+    font-size: 20px;
+}
+}
+@media only screen and (max-width:1350px) {
+.sec2{
+    width:600px;
+    height: 400px;
+
+   margin-left: 30px;
+
+}
+
+.main-sec{
+    width:1000px;
+}
+.options{
+    width: 100%;
+    height: 100%;
+    margin-left:20px;
+}
+.Lightning{
+    font-size: 30px;
+    padding: 30px;
+    padding-left: 50px;
+}
+.Experience{
+    font-size: 20px;
+    padding-bottom: 10px;
+    line-height: 30px;
+}
+.arrow{
+    font-size: 15px;
+}
+ .ani-sec{
+    width: 950px;
+    height: 550px;
+   padding-right: 30px;
+}
+.main3{
+    height: 1300px;
+}
+}
+@media only screen and (max-width:1000px){
+.sec2{
+    width:500px;
+    height:400px;
+  
+margin-right: 0px;
+}
+.main3{
+    height: 1550px;
+}
+.main-sec{
+    width:700px;
+  margin-left: -60px;
+}
+.options{
+    width:96%;
+    height: 100%;
+    margin-left:15px;
+}
+.Lightning{
+    font-size: 25px;
+    padding:  13px;
+margin-left: 8px;
+}
+.Experience{
+    font-size: 20px;
+    padding:10px 20px ;
+    line-height: 1.3;
+}
+.arrow{
+    font-size: 15px;
+    padding-left: 15px;
+    line-height: 1;
+}
+.ani-sec{
+    display: flex;
+    flex-direction: row;
+width: 750px;
+height: 800px;
+}
+.pio{
+    width: 100%;
+}
+.para{
+    padding-left: 20px;
+    padding-right: 60px;
+    width: 300px;
+    margin-left: 100px;
+}
+.ani-square{
+   padding-top: 150px;
+   padding-left: 0;
+   margin: 0;
+   margin-right: 50px;
+}
+}
+@media only screen and (max-width:769px) {
+
+
+  .main-sec{
+    display: block;
+    justify-content: center;
+    justify-items: center;
+    width: 600px;
+    margin-left: -65px;
+
+   }
+   .sec1{
+    width:80%;
+    height:400px;
+margin-top: 70px;
+
+   }
+   .sec2{
+    width:80%;
+
+   margin-top: 30px;
+   margin-left: 70px;
+
+   }
+   .options{
+    width: 545px;
+   }
+   .Lightning{
+    padding-top: 20px;
+    font-size: 40px;
+   }
+   .arrow{
+    font-size: 20px;
+   }
+
+   .ani-sec{
+    display: block;
+width: 600px;
+justify-items: center;
+
+}
+
+.para2{
+    width: 420px; 
+    
+}
+.main3{
+  height: 2000px;
+}
+.ani-square{
+   padding-top: 250px;
+   align-self: center;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+}
+.de{
+    width: 90%;
+    margin-top: 60px;
+    padding-bottom: 30px;
+}
+.de2{
+    width:80%;
+    padding-top: 100px;
+
+}
+.ad{
+    width: 100%;
+}
+.send-btn{
+    margin-top: 60px;
+}
+}
+@media only screen and (max-width:650px) {
+
+ .main-sec{
+    display: block;
+    justify-content: center;
+    justify-items: center;
+    width: 500px;
+    margin-left: -65px;
+
+   }
+   .sec1{
+    width:400px;
+    height:400px;
+margin-top: 70px;
+
+   }
+   .sec2{
+    width:400px;
+
+   margin-top: 30px;
+   margin-left: 70px;
+
+   }
+   .options{
+    width: 440px;
+
+   }
+   .Lightning{
+    padding-top: 20px;
+    font-size: 30px;
+   }
+   .arrow{
+    font-size: 20px;
+   }
+
+
+}
+
+@media only screen and (max-width:520px) {
+.main-sec{
+    display: block;
+    justify-content: center;
+    justify-items: center;
+    width: 400px;
+    margin-left: -65px;
+
+   }
+   .sec1{
+    width:300px;
+    height:400px;
+margin-top: 70px;
+padding-right: 20px;
+
+   }
+   .sec2{
+    width:300px;
+height: 500px;
+   margin-top: 30px;
+   margin-left: 70px;
+   padding-right: 20px;
+
+   }
+   .options{
+    width: 315px;
+
+   }
+   .Lightning{
+    padding-top: 20px;
+    font-size: 30px;
+
+   }
+   .arrow{
+    font-size: 16px;
+   }
+   .Experience{
+    font-size: 20px;
+   }
+
+
+
+}
+@media only screen and (max-width:370px) {
+.main-sec{
+    display: block;
+    justify-content: center;
+    justify-items: center;
+    width: 300px;
+    margin-left: -65px;
+
+   }
+   .sec1{
+    width:280px;
+    height:400px;
+margin-top: 70px;
+
+   }
+   .sec2{
+    width:280px;
+height: 500px;
+   margin-top: 30px;
+   margin-left: 70px;
+
+   }
+   .options{
+    width: 292px;
+
+   }
+   .Lightning{
+    padding-top: 20px;
+    font-size: 30px;
+
+   }
+   .arrow{
+    font-size: 16px;
+
+   }
+
+   .Experience{
+    font-size: 20px;
+   }
+  
+}
+@media only screen and (max-width:1020px) {
+.ani-sec{
+    display: flex;
+    flex-direction: row;
+width: 950px;
+height: 550px;
+}
+.pio{
+    width: 100%;
+}
+
+.ani-square{
+   padding-top: 150px;
+   padding-left: 0;
+   margin: 0;
+   margin-right: 70px;
+}
+.ani-sec2{
+    width: 890px;
+    margin-left: 100px;
+
+}
+.ani-square2{
+    padding-top:200px ;
+}
+}
+
+@media only screen and (max-width:640px) {
+.ani-sec{
+    display: block;
+width: 400px;
+justify-items: center;
+margin-right: 0 ;
+
+}
+
+
+.ani-square{
+   margin-left: 20px;
+   padding-top: 350px;
+   width: 200px;
+}
+.star-ani1{
+    width: 200px;
+    height: 200px;
+
+}
+.star-ani2{
+    width: 200px;
+    height: 200px;
+border-radius: 10px;
+}
+.star-ani3{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    
+}
+
+}
+@media only screen and (max-width:530px) {
+.ani-sec{
+    display: block;
+width: 200px;
+justify-items: center;
+height: 700px;
+
+}
+.para{
+    width: 200px;
+}
+
+.ani-square{
+   padding-top: 350px;
+   width: 200px;
+   align-self: center;
+   padding-bottom:100px;
+}
+.star-ani1{
+    width: 200px;
+    height: 200px;
+
+}
+.star-ani2{
+    width: 200px;
+    height: 200px;
+border-radius: 10px;
+}
+.star-ani3{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    
+}
+.main3{
+    height: 2050px;
+}
+}
+@media only screen and (max-width:1000px) {
+.ani-sec{
+    display: flex;
+    flex-direction: row;
+width: 700px;
+height: 650px;
+}
+.pio{
+    width: 100%;
+}
+.para{
+    padding-left: 0;
+    padding-right: 70px;
+    width: 500px;
+    margin-left: 0;
+
+}
+.para2-2{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.ani-square{
+   
+   padding-top: 250px;
+margin-right: 50px;
+  
+}
+.star-ani1{
+    height: 200px;
+width: 200px;
+
+}
+.star-ani2{
+    height: 200px;
+width: 200px;
+}
+.star-ani3{
+    height: 200px;
+width: 200px;
+}
+.ani-sec2{
+width: 538px;
+margin-left: 200px;
+}
+
+.ani-square2{
+    padding-left: 0;
+    margin-left: -100px;
+}
+.star-ani11{
+    height: 170px;
+    width: 250px;
+}
+.star-ani33{
+    width: 150px;
+    height: 150px;
+}
+}
+@media only screen and (max-width:769px) {
+    .ani-sec{
+    display: flex;
+    flex-direction: column;
+width: 90%;
+height: 900px;
+}
+.pio{
+    width: 100%;
+}
+.para{
+    padding-left: 30px;
+    padding-right: 0px;
+    width:95%;
+    margin-left: 0;
+
+}
+.para2{
+    width: 100%;
+}
+.ani-square{
+    align-self:center ;
+    margin-left: 80px;
+   padding: 50px;
+  
+}
+.star-ani1{
+    height: 200px;
+width: 200px;
+
+}
+.star-ani2{
+    height: 200px;
+width: 200px;
+}
+.star-ani3{
+    height: 200px;
+width: 200px;
+}
+
+.para2-2{
+    padding-left: 50px;
+    width: 95%;
+}
+.star-ani11{
+    width: 250px;
+    height: 170px;
+}
+.star-ani33{
+    height: 150px;
+    width: 150px;
+}
+}
+@media only screen and (max-width:450px) {
+    .ani-sec{
+    display: flex;
+    flex-direction: column;
+width: 90%;
+height: 950px;
+}
+.pio{
+    width: 100%;
+}
+.para{
+    padding-left: 20px;
+    padding-right: 0px;
+    width:100%;
+    margin-left: 0;
+height:830px;
+}
+.ani-square11{
+   align-content: center;
+ padding: 50px;
+ margin-left: 130px;
+
+}
+.ani-square2{
+padding-left: 100px;
+padding-bottom: 100px;
+}
+.star-ani1{
+    height: 150px;
+width: 150px
+
+}
+.star-ani2{
+    height: 150px;
+width: 150px;
+}
+.star-ani3{
+    height: 150px;
+width: 150px;
+}
+.para2-2{
+    width: 100%;
+    padding-left: 40px;
+    height: 900px;
+
+}
+.star-ani11{
+    width: 190px;
+    height: 120px;
+}
+.star-ani33{
+    height: 100px;
+    width: 100px;
+}
+.main3{
+height: 2250px;
+}
+}
+@media only screen and (max-width:350px) {
+    .ani-sec{
+    display: flex;
+    flex-direction: column;
+width: 90%;
+height: 1000px;
+}
+
+.pio{
+    width: 100%;
+}
+.para{
+    padding-left: 20px;
+    padding-right: 0px;
+    width:90%;
+    margin-left: 0;
+    height: 800px;
+
+}
+.para2-2{
+    padding-left: 40px;
+    width: 100%;
+}
+.ani-square{
+   align-content: center;
+ padding: 50px;
+ margin-left: 80px;
+ padding-bottom: 100px;
+ padding-right: 0;
+ margin-top: 30px;
+}
+.star-ani1{
+    height: 150px;
+width: 150px
+
+}
+.star-ani2{
+    height: 150px;
+width: 150px;
+}
+.star-ani3{
+    height: 150px;
+width: 150px;
+}
+
+.star-ani11{
+    width: 180px;
+    height: 115px;
+}
+.star-ani33{
+    height: 100px;
+    width: 100px;
+}
+}
+
+
+@media only screen and (max-width:769px) {
+.ani-sec2{
+margin-right: 180px;
+/* width: 200px; */
+padding-right: 50px;
+
+}
+.para22{
+    width: 90%;
+}
+}
+@media only screen and (max-width:500px) {
+.ani-sec2{
+margin-right: 220px;
+}
+.ani-square2{
+    margin-left: 120px;
+}
+.main3{
+    height: 2100px;
+}
+}
+
+@media only screen and (max-width:640px) {
+.ani-square2{
+    margin-right:90px;
+}
+}
+@media only screen and (max-width:350px) {
+.ani-square2{
+    margin-left: 140px;
+}
+}
+@media only screen and (max-width:520px) {
+.opt1,.optionss{
+    width: 83%;
+}
+}
+@media only screen and (min-width:1360px) {
+.details{
+   
+    width: 1415px;
+    justify-self: center;
+}
+}
+@media only screen and (max-width:430px) {
+.main3{
+    height: 2150px;
+}
+}
+@media only screen and (max-width:400px) {
+.main3{
+    height: 2200px;
+}
+}
+@media only screen and (max-width:370px) {
+.main3{
+    height: 2250px;
+}
+}
+@media only screen and (max-width:350px) {
+.main3{
+    height: 2300px;
+}
+.de2{
+padding-right:50px;
+}
+.ad{
+margin-left: 23px;
+}
+}
+@media only screen and (max-width:900px) {
+.de{
+    width: 50%;
+    margin-left: 0;
+}
+}
+@media only screen and (max-width:769px) {
+    .de{
+        width: 90%;
+    }
+}
+@media only screen and (max-width:400px) {
+.fo{
+        padding: 40px 5px 0px 5px;
+    }
+
+.fo2{
+        padding: 20px 10px 0px 10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+       <main class="main1">
+        <div class="bg-ani"></div>
+        <div class="cir-ani"></div>
+
+
+        <img class="tri-ani" src="triangle_logo-removebg-preview.png"></img>
+        <div class="sq-ani"></div>
+        <nav>
+            <div class="main-logo">
+                <img class="main-icon" src="logo_hexagonal-removebg-preview.png">
+                <h1 class="main-text">ELECTRIC XTRA</h1>
+            </div>
+            <div class="main-a">
+                <a href="index2.html" class="a a11">HOME <div class="li"></div></a>
+
+
+                <a href="FEATURES" class="a a22">FEATURES</a>
+
+
+                <a href="ABOUT" class="a a22">ABOUT</a>
+
+
+                <a href="CONTACT" class="a a22">CONTACT</a>
+
+
+            </div>
+            <div class="more-img">
+                <img src="icons8-menu-button-50.png" height="40px" width="40px">
+            </div>
+        </nav>
+        <div class="main-head">
+            <h1 class="E" style="justify-content: center; background-color: transparent;
+    font-family: sans-serif;">E</h1>
+            <h1 class="L" style="justify-content: center; background-color: transparent;
+    font-family: sans-serif;">L</h1>
+            <h1 class="E2" style="justify-content: center; background-color: transparent;
+    font-family: sans-serif;">E</h1>
+            <h1 class="C" style="justify-content: center; background-color: transparent;
+    font-family: sans-serif;">C</h1>
+            <h1 class="T" style="justify-content: center; background-color: transparent;
+    font-family: sans-serif;">T</h1>
+            <h1 class="R" style="justify-content: center; background-color: transparent;
+    font-family: sans-serif;">R</h1>
+            <h1 class="I" style="justify-content: center; background-color: transparent;
+    font-family: sans-serif;">I</h1>
+            <h1 class="CC" style="justify-content: center; background-color: transparent;
+    font-family: sans-serif;">C</h1>
+            <h1 class="D" style="justify-content: center; background-color: transparent;
+    font-family: sans-serif;">D</h1>
+            <h1 class="R2" style="justify-content: center; background-color: transparent;
+    font-family: sans-serif;">R</h1>
+            <h1 class="E3" style="justify-content: center; background-color: transparent;
+    font-family: sans-serif;">E</h1>
+            <h1 class="A" style="justify-content: center; background-color: transparent;
+    font-family: sans-serif;">A</h1>
+            <h1 class="M" style="justify-content: center; background-color: transparent;
+    font-family: sans-serif;">M</h1>
+            <h1 class="S" style="justify-content: center; background-color: transparent;
+    font-family: sans-serif;">S</h1>
+        </div>
+        <div class="main-head11">
+            <h1 class="F" style="justify-content: center; background-color: transparent;
+    font-family: sans-serif;">F</h1>
+            <h1 class="U" style="justify-content: center; background-color: transparent;
+    font-family: sans-serif;">U</h1>
+            <h1 class="T" style="justify-content: center; background-color: transparent;
+    font-family: sans-serif;">T</h1>
+            <h1 class="UU" style="justify-content: center; background-color: transparent;
+    font-family: sans-serif;">U</h1>
+            <h1 class="RR" style="justify-content: center; background-color: transparent;
+    font-family: sans-serif;">R</h1>
+            <h1 class="EE" style="justify-content: center; background-color: transparent;
+    font-family: sans-serif;">E</h1>
+            <h1 class="II" style="justify-content: center; background-color: transparent;
+    font-family: sans-serif;">I</h1>
+            <h1 class="SS" style="justify-content: center; background-color: transparent;
+    font-family: sans-serif;">S</h1>
+            <h1 class="N" style="justify-content: center; background-color: transparent;
+    font-family: sans-serif;">N</h1>
+            <h1 class="O" style="justify-content: center; background-color: transparent;
+    font-family: sans-serif;">O</h1>
+            <h1 class="W" style="justify-content: center; background-color: transparent;
+    font-family: sans-serif;">W</h1>
+        </div>
+
+        <h4 class="main-head2">Powering tomorrow's digital revolution today</h4>
+        <h4 class="main-head22"> digital revolution today</h4>
+
+
+    </main>
+
+    <main class="main2">
+        <div class="buttons">
+            <button class="button1">get started</button>
+            <button class="button2">learn more</button>
+        </div>
+        <div class="core">Core Features</div>
+
+        <section class="main-sec">
+            <div class="sec1">
+                <div class="options">
+                    <div class="opt1 Performance">⚡️ Performance</div>
+                    <div class="optionss opt2 Security">🔒 Security</div>
+                    <div class="optionss opt2 Network">🌐 Network</div>
+                    <div class="optionss opt2 Analytics">📊 Analytics</div>
+                    <div class="optionss opt2 Integration">🔧 Integration</div>
+                </div>
+            </div>
+            <div class="sec2">
+                <div class="Lightning">Lightning Fast Performance</div>
+                <div class="Experience">Experience unprecedented speed with our quantum-powered infrastructure. Built on
+                    cutting-edge technology that delivers results at the speed of thought. Electric Xtra CSS template is
+                    brought to you by TemplateMo website.</div>
+                <div class="arrow">Sub-millisecond response times.</div>
+                <div class="arrow">99.99% uptime guarantee.</div>
+                <div class="arrow">Automatic scaling based.</div>
+                <div class="arrow">Real-time data synchronization.</div>
+            </div>
+        </section>
+    </main>
+    <main class="main3">
+
+        <div class="core about">
+            About Electric Xtra
+        </div>
+        <section class="ani-sec">
+            <div class="para">
+                <div class="pio">Pioneering the Digital </div>
+                <div class="fro">Frontier</div>
+                <div class="para2">
+                    At ELECTRIC XTRA, we're not just building technology – we're crafting the future. Our mission is to
+                    bridge the gap between human potential and digital innovation, creating solutions that empower
+                    individuals and transform industries.
+                    <div class="para3">
+                        Founded by visionaries who saw beyond the limitations of current technology, ELECTRIC XTRA
+                        represents a quantum leap in digital infrastructure. We combine cutting-edge research with
+                        practical applications to deliver solutions that are both revolutionary and reliable.
+                    </div>
+                    <div class="para4">
+                        Join us as we redefine what's possible in the digital age. The future isn't something that
+                        happens to us – it's something we create together.
+                    </div>
+                </div>
+            </div>
+
+            <div class="ani-square ani-square11">
+                <div class="star-ani1">
+                    <div class="star-ani2">
+                        <div class="star-ani3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ani-sec ani-sec2">
+            <div class="ani-square ani-square2">
+                <div class="star-ani1 star-ani11">
+                    <div class="star-ani2 star-ani22">
+                        <div class="star-ani3 star-ani33">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="para para2-2">
+                <div class="pio pio2">Innovation at Every</div>
+                <div class="fro fro2">Level</div>
+                <div class="para2 para22">
+                    Our commitment to excellence drives us to push boundaries and challenge conventions. With a team of
+                    world-class engineers, designers, and visionaries, we're creating solutions that not only meet
+                    today's needs but anticipate tomorrow's challenges.
+                    <div class="para3 para33">
+                        From quantum computing to neural networks, from blockchain to AI, we're at the forefront of
+                        every technological revolution. Our integrated approach ensures that each innovation builds upon
+                        the last, creating a synergy that amplifies our impact.
+                    </div>
+                    <div class="para4 para44">
+                        Experience the power of true digital transformation. With ELECTRIC XTRA, you're not just
+                        adopting technology – you're embracing a philosophy of continuous evolution and limitless
+                        possibility.
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+    <main class="main4">
+        <div class="core get">
+            Get In Touch
+        </div>
+        <section class="details">
+            <section class="de">
+                <div class="ex exx">NAME</div>
+                <input class="ex1 name" type="text" id="NAME">
+                <div class="ex">EMAIL</div>
+                <input class="ex1 email" type="text" id="EMAIL">
+                <div class="ex">SUBJECT</div>
+                <input class="ex1 subject" type="text" id="SUBJECT">
+                <div class="ex">MASSAGE</div>
+                <textarea class="ex1 ex2 textarea" id="TEXTAREA"></textarea>
+                <button class="button1 send-btn">SEND MASSAGE</button>
+
+            </section>
+            <section class="de2">
+                <div class="Lightning con">Connect With Us
+                </div>
+                <div class="e em">
+                    <div class="exxx em1">Email
+                        <div class="exxx1 em2">sutharsagar3056@gmail.com</div>
+                    </div>
+                </div>
+                <div class="e phone">
+
+                    <div class="exxx phone1">Phone
+                        <div class="exxx1 phone2">8160458386</div>
+                    </div>
+                </div>
+                <div class="e loc">
+                    <div class="exxx loc1">Location
+                        <div class="exxx1 loc2">Ahmedabad , Gujarat</div>
+                    </div>
+                </div>
+                <div class="ad">
+                    380061 Ahmedabad ,
+                    <br>
+                    Gujarat
+                </div>
+            </section>
+        </section>
+
+    </main>
+    <hr class="hrr">
+    <footer>
+        <div class="main-foot">
+            <div class="fo">Privacy Policy</div>
+            <div class="fo"> Terms of Service</div>
+            <div class="fo"> Careers</div>
+        </div>
+        <div class="fo2">© 2025 SAGAR. All rights reserved. Building tomorrow, today. | Design:  </div>
+    </footer>
+
+</body>
+
+</html>
